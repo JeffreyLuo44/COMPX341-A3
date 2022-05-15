@@ -1,4 +1,4 @@
-//
+// Name: Jeffrey Luo ID: 1535901
 export default {
   apiGateway: {
     REGION: "us-east-1",
