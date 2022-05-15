@@ -33,14 +33,14 @@ export class ProductRow extends React.Component<ProductRowProps, ProductRowState
     };
   }
 
-  //async componentDidMount() {
+  async componentDidMount() {
     try {
       const book = await this.getBook();
       this.setState({ book });
     } catch (e) {
       alert(e);
     }
-  //}
+  }
 
   getBook() {
     return API.get("books", `/books/${this.props.bookId}`, null);
